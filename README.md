@@ -16,8 +16,7 @@ GitHub：[CoderCWLiu](https://github.com/summermaimaiti)
 
 ### 创建一个类ViewController，ViewController.m 文件中源码如下
 
-#import "ViewController.h"
-#import "NextViewController.h"
+```objc
 
 @interface ViewController ()
 {
@@ -57,7 +56,7 @@ NSLog(@"%@",arr);
 
 ### 创建一个类NextViewController，NextViewController.h 文件中源码如下
 
-#import <UIKit/UIKit.h>
+```objc
 
 @interface NextViewController : UIViewController
 
@@ -67,8 +66,8 @@ NSLog(@"%@",arr);
 
 ### NextViewController.m 文件中源码如下
 
-#import "NextViewController.h"
-#import "ViewController.h"
+```objc
+
 @interface NextViewController ()
 {
 ViewController *vc;
