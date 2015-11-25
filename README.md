@@ -53,6 +53,7 @@ NSLog(@"%@",arr);
 [self presentViewController:next animated:YES completion:^{
 }];
 }
+```
 
 ### 创建一个类NextViewController，NextViewController.h 文件中源码如下
 
@@ -63,11 +64,11 @@ NSLog(@"%@",arr);
 @property (nonatomic, copy) void (^backBlock) (id arr);
 
 @end
+```
 
 ### NextViewController.m 文件中源码如下
 
 ```objc
-
 @interface NextViewController ()
 {
 ViewController *vc;
@@ -103,6 +104,7 @@ self.backBlock(arr);
 }];
 
 }
+```
 
 ## 期待
 * 如果在使用过程中遇到BUG，希望你能Issues我，谢谢（或者尝试下载最新的Demo代码看看BUG修复没有）
