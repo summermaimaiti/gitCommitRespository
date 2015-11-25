@@ -7,16 +7,46 @@
 //
 
 #import "ViewController.h"
+#import "NextViewController.h"
 
 @interface ViewController ()
-
+{
+    NextViewController *next;
+}
 @end
 
 @implementation ViewController
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+     next = [[NextViewController alloc] init];
+    [next logBlock:^(id paramga) {
+       
+        NSLog(@"%@",paramga);
+    }];
+    
+    next.backBlock = ^(id arr){
+    
+        NSLog(@"%@",arr);
+    };
+}
+
+
+- (IBAction)btnActionClick:(id)sender {
+    
+    
+    [self presentViewController:next animated:YES completion:^{
+        
+        
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -15,6 +15,7 @@
 		BEC7129E1C03FED600FDCBEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEC7129C1C03FED600FDCBEE /* LaunchScreen.storyboard */; };
 		BEC712A91C03FED600FDCBEE /* HelloBlockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC712A81C03FED600FDCBEE /* HelloBlockTests.m */; };
 		BEC712B41C03FED600FDCBEE /* HelloBlockUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC712B31C03FED600FDCBEE /* HelloBlockUITests.m */; };
+		BEC712C31C03FFB000FDCBEE /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC712C21C03FFB000FDCBEE /* NextViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,9 @@
 		BEC712AF1C03FED600FDCBEE /* HelloBlockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloBlockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEC712B31C03FED600FDCBEE /* HelloBlockUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloBlockUITests.m; sourceTree = "<group>"; };
 		BEC712B51C03FED600FDCBEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEC712C11C03FFB000FDCBEE /* NextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
+		BEC712C21C03FFB000FDCBEE /* NextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
+		BEC714461C04481E00FDCBEE /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,8 @@
 				BEC712921C03FED600FDCBEE /* AppDelegate.m */,
 				BEC712941C03FED600FDCBEE /* ViewController.h */,
 				BEC712951C03FED600FDCBEE /* ViewController.m */,
+				BEC712C11C03FFB000FDCBEE /* NextViewController.h */,
+				BEC712C21C03FFB000FDCBEE /* NextViewController.m */,
 				BEC712971C03FED600FDCBEE /* Main.storyboard */,
 				BEC7129A1C03FED600FDCBEE /* Assets.xcassets */,
 				BEC7129C1C03FED600FDCBEE /* LaunchScreen.storyboard */,
@@ -118,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				BEC7128F1C03FED600FDCBEE /* main.m */,
+				BEC714461C04481E00FDCBEE /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -271,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEC712961C03FED600FDCBEE /* ViewController.m in Sources */,
+				BEC712C31C03FFB000FDCBEE /* NextViewController.m in Sources */,
 				BEC712931C03FED600FDCBEE /* AppDelegate.m in Sources */,
 				BEC712901C03FED600FDCBEE /* main.m in Sources */,
 			);
@@ -414,6 +422,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HelloBlock/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.firstcare.HelloBlock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -425,6 +434,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HelloBlock/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.firstcare.HelloBlock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -498,6 +508,7 @@
 				BEC712BA1C03FED600FDCBEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BEC712BB1C03FED600FDCBEE /* Build configuration list for PBXNativeTarget "HelloBlockTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +517,7 @@
 				BEC712BD1C03FED600FDCBEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BEC712BE1C03FED600FDCBEE /* Build configuration list for PBXNativeTarget "HelloBlockUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +526,7 @@
 				BEC712C01C03FED600FDCBEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
