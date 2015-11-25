@@ -8,21 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-typedef NS_ENUM(NSInteger, AFNetworkReachabilityStatus) {
-    AFNetworkReachabilityStatusUnknown          = -1,
-    AFNetworkReachabilityStatusNotReachable     = 0,
-    AFNetworkReachabilityStatusReachableViaWWAN = 1,
-    AFNetworkReachabilityStatusReachableViaWiFi = 2,
-};
-
-typedef NS_ENUM(NSInteger,ModelType) {
-
-    AA = 0,
-    BB = 1,
-};
-
 @interface NextViewController : UIViewController
-- (void)logBlock:(void(^)(id paramga))myblock;
+
 @property (nonatomic, copy) void (^backBlock) (id arr);
 
 @end

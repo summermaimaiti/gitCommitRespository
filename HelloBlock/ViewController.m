@@ -20,12 +20,10 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
     
      next = [[NextViewController alloc] init];
     [next logBlock:^(id paramga) {
@@ -38,20 +36,12 @@
         NSLog(@"%@",arr);
     };
     
-    NSLog(@" @");
-    NSLog(@"\|/");
-    NSLog(@" @");
-    NSLog(@"\|/");
-     NSLog(@"|");
 }
 
 
 - (IBAction)btnActionClick:(id)sender {
     
-    
     [self presentViewController:next animated:YES completion:^{
-        
-        
     }];
 }
 

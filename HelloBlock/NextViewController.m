@@ -32,35 +32,13 @@
     vc = [[ViewController alloc] init];
 }
 
-- (void)logBlock:(void(^)(id paramga))myblock
-{
-    NSArray *arr = @[@"one",
-                     @"two",
-                     @"three"];
-    myblock(arr);
-
-}
-
 - (void)submitBtn
 {
-    /*
-     void(^fin)(NSString *);
-    
-    fin =  ^(NSString *name){
-    
-        NSLog(@"%@",name);
-        
-    };
-    
-    fin(@"haha");
-     */
-    
     [self dismissViewControllerAnimated:YES completion:^{
         
         NSArray *arr = @[@"four",
                          @"five",
                          @"six"];
-//        vc.sendBlock(arr);
         self.backBlock(arr);
     }];
     
