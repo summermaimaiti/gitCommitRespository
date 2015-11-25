@@ -37,6 +37,12 @@
     
         NSLog(@"%@",arr);
     };
+    
+    NSLog(@" @");
+    NSLog(@"\|/");
+    NSLog(@" @");
+    NSLog(@"\|/");
+     NSLog(@"|");
 }
 
 
